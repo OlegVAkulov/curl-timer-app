@@ -1,7 +1,7 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-<%--<a href="${pageContext.request.contextPath}/run"><h1>run</h1></a>--%>
-<%--<a href="/run"><h1>run</h1></a>--%>
+<h2>This is curl tamer</h2>
+<h2>For start press RUN</h2>
+<a href="MainServlet">RUN</a>
 </body>
 </html>
