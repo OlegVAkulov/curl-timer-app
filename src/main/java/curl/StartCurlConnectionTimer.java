@@ -26,8 +26,9 @@ private String info ;
     public void runTimer() {
 
         Calendar startDataTime = Calendar.getInstance();
-        startDataTime.set(2022, Calendar.FEBRUARY, 21, 17, 29);
         Date date = startDataTime.getTime();
+        startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);
+        date = startDataTime.getTime();
         TimerTask timerTask = new StartCurlConnectionTimer();
         this.info = "we are the champions!";
 
