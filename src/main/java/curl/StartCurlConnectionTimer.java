@@ -38,7 +38,7 @@ private String info ;
 
         Timer timer = new Timer();
 
-        timer.scheduleAtFixedRate(timerTask, date.getTime() - System.currentTimeMillis(), 24 * 60 * 60 * 1000);
+        timer.scheduleAtFixedRate(timerTask, startDataTime.getTimeInMillis() - System.currentTimeMillis(), 24 * 60 * 60 * 1000);
 
 
     }
