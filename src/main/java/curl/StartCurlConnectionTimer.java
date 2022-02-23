@@ -27,7 +27,7 @@ private String info ;
 
         Calendar startDataTime = Calendar.getInstance();
         Date date = startDataTime.getTime();
-        startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);
+        startDataTime.set(2022, date.getMonth(), 24, 17, 29);
         date = startDataTime.getTime();
         TimerTask timerTask = new StartCurlConnectionTimer();
         this.info = "we are the champions!";
