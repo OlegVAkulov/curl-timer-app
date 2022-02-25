@@ -30,7 +30,7 @@ private String info ;
 //        if (date.getHours() < 17 ){
 //        startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);}
 //        else {}
-        startDataTime.set(2022, date.getMonth(), 24, 17, 29);
+        startDataTime.set(2022, date.getMonth(), 26, 17, 29);
         date = startDataTime.getTime();
         TimerTask timerTask = new StartCurlConnectionTimer();
         this.info = String.valueOf(startDataTime.getTime());
