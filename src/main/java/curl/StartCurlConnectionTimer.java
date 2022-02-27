@@ -27,11 +27,11 @@ private String info ;
 
         Calendar startDataTime = Calendar.getInstance();
         Date date = startDataTime.getTime();
-//        if (date.getHours() < 17 ){
-//        startDataTime.set(2022, date.getMonth(), date.getDay(), 17, 29);}
-//        else {}
-        startDataTime.set(2022, date.getMonth(), 27, 17, 29);
-        date = startDataTime.getTime();
+        startDataTime.set(2022, 1, 27, 17, 29);
+        while (startDataTime.getTimeInMillis() < Calendar.getInstance().getTimeInMillis()) {
+            startDataTime.setTimeInMillis(startDataTime.getTimeInMillis() + 24*60*60*1000);
+        }
+
         TimerTask timerTask = new StartCurlConnectionTimer();
         this.info = String.valueOf(startDataTime.getTime());
 
